@@ -5,6 +5,7 @@ stages:
     request:
       url: http://localhost:5004/authenticate
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -15,6 +16,7 @@ stages:
     request:
       url: http://localhost:5004/reset-password-init
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -25,6 +27,7 @@ stages:
     request:
       url: http://localhost:5004/reset-password-finish
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -35,6 +38,7 @@ stages:
     request:
       url: http://localhost:5004/university
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -45,6 +49,7 @@ stages:
     request:
       url: http://localhost:5004/department
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -55,6 +60,7 @@ stages:
     request:
       url: http://localhost:5004/holiday
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -65,6 +71,7 @@ stages:
     request:
       url: http://localhost:5004/current-user
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -75,6 +82,7 @@ stages:
     request:
       url: http://localhost:5004/user
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -85,6 +93,7 @@ stages:
     request:
       url: http://localhost:5004/user-statistics
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -95,6 +104,7 @@ stages:
     request:
       url: http://localhost:5004/meeting-statistics
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -105,6 +115,7 @@ stages:
     request:
       url: http://localhost:5004/get-togethers
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -115,6 +126,7 @@ stages:
     request:
       url: http://localhost:5004/top-interests
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -125,6 +137,7 @@ stages:
     request:
       url: http://localhost:5004/top-users
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -135,6 +148,7 @@ stages:
     request:
       url: http://localhost:5004/quick-stats
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
@@ -145,6 +159,7 @@ stages:
     request:
       url: http://localhost:5004/meeting-spot
       method: GET
+      timeout: 3
     response:
       status_code: 200
 
