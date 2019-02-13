@@ -1,40 +1,150 @@
 ---
-# Every test file has one or more tests...
 test_name: Get some fake data from the JSON placeholder API
-
-# ...and each test has one or more stages (e.g. an HTTP request)
 stages:
   - name: Make sure we have the right ID
-
-    # Define the request to be made...
     request:
-      url: http://178.128.180.197/api/account
+      url: http://localhost:5004/authenticate
       method: GET
-
-    # ...and the expected response code and body
     response:
       status_code: 200
-#      body:
-#        id: 1
-        save:
-          body:
-            returned_id: id
 
+---
+test_name: Get some fake data from the JSON placeholder APIssss
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/reset-password-init
+      method: GET
+    response:
+      status_code: 200
 
-{
-  "activated": true,
-  "authorities": [
-    "string"
-  ],
-  "createdBy": "string",
-  "createdDate": "2019-02-12T23:19:26.745Z",
-  "email": "string",
-  "firstName": "string",
-  "id": "string",
-  "imageUrl": "string",
-  "langKey": "string",
-  "lastModifiedBy": "string",
-  "lastModifiedDate": "2019-02-12T23:19:26.746Z",
-  "lastName": "string",
-  "login": "string"
-}
+---
+test_name: Get some fake data from the JSON placeholder APISDsd
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/reset-password-finish
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder APIdSDsdSDCC
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/university
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/department
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/holiday
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/current-user
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/user
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/user-statistics
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/meeting-statistics
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/get-togethers
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/top-interests
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/top-users
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/quick-stats
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: Get some fake data from the JSON placeholder API333DD
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: http://localhost:5004/meeting-spot
+      method: GET
+    response:
+      status_code: 200
+
