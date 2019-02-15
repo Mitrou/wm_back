@@ -23,7 +23,7 @@ stages:
 ---
 test_name: Reset pass finalization test
 stages:
-  - name: Make sure we have the right ID
+  - name: Make sure we have the right responce code
     request:
       url: http://localhost:5004/reset-password-finish
       method: GET

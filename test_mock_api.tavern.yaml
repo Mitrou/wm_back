@@ -1,0 +1,77 @@
+#correct_header = {'Content-Type': 'application/json'}
+#incorrect_header = {'Content-type': 'x-www-form-urlencoded'}
+#
+#SUCCESS = 200
+#INCORRECT_HEADER = 400
+#ADDED = 201
+#NOT_FOUND = 404
+#INT_ERROR = 500
+#base_url = 'http://qainterview.cogniance.com/candidates'
+
+---
+test_name: CRUD test example
+
+includes:
+  - !include common.yaml
+
+stages:
+  - name: Read initial data
+    request:
+      url: "{service.mock_base_url:s}"
+      method: GET
+      timeout: 3
+    response:
+      status_code: 200
+  - name: Create new entry
+    request:
+      url: "{service.mock_base_url:s}"
+      method: POST
+      timeout: 3
+      json:
+        name: "John Dou"
+        position: "Guru Designer"
+    response:
+      status_code:
+        - 200
+        - 201
+      save:
+        json:
+          posted_id: id
+
+  - name: Read new entry
+    request:
+      url: "{service.mock_base_url:s}/{posted_id}"
+      method: GET
+      timeout: 3
+    response:
+      status_code: 200
+#      body:
+#        id: {"posted_id"}
+#  - name: Update new entry
+#    request:
+#      url: http://localhost:5004/authenticate
+#      method: PUT
+#      timeout: 3
+#    response:
+#      status_code: 200
+#  - name: Read updated entry
+#    request:
+#      url: http://localhost:5004/authenticate
+#      method: GET
+#      timeout: 3
+#    response:
+#      status_code: 200
+#  - name: Delete new entry
+#    request:
+#      url: http://localhost:5004/authenticate
+#      method: DEL
+#      timeout: 3
+#    response:
+#      status_code: 200
+#  - name: Final verification that data were deleted
+#    request:
+#      url: http://localhost:5004/authenticate
+#      method: DEL
+#      timeout: 3
+#    response:
+#      status_code: 200
